@@ -1,0 +1,87 @@
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+    font-size: 100%;
+}
+
+p {
+  color: white;
+  text-shadow: 12px 12px 14px #000;
+}
+
+body {
+    background-image: url(../assets/images/background_sea.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Open Sans'; /* sets our font to the "Open Sans" typeface */
+    color: white;             /* sets the text color to white */
+    min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
+    padding-bottom: 120px;
+
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top:0;
+    background-color: rgba(17,232,243, .1);
+    z-index: 1;
+}
+
+.navbar > .logo {
+    position: relative;
+    left: 2rem;
+    cursor: pointer;  /* produces the finger-pointer icon when you hover over the logo */
+}
+
+.navbar .links-container {
+display: table;
+position: absolute;
+top: 0;
+right: 0;
+height: 100px;
+color: white;
+/* #3 */
+text-decoration: none;
+}
+
+.links-container .navbar-link {
+display: table-cell;
+position: relative;
+height: 100%;
+padding-left: 1rem;
+padding-right: 1rem;
+/* #4 */
+vertical-align: middle;
+color: black;
+font-size: 0.625rem;
+letter-spacing: 0.05rem;
+font-weight: 700;
+text-transform: uppercase;
+/* #3 */
+text-decoration: none;
+cursor: pointer;
+font-size: 18px;
+}
+
+/* #5 */
+.links-container .navbar-link:hover {
+color: rgb(233,50,117);
+}
+
+.links-container .navbar-link:active {
+background-color: white;
+}
+
+.title {
+  position: absolute;
+  margin-top: 75px;
+  left: calc(55% - 80px);
+
+}
