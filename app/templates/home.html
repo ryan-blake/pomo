@@ -1,1 +1,6 @@
-<h1>Home Page</h1>
+<section class="hero-content">
+  <h1 class="hero-title">{{ landing.heroTitle }}</h1>
+  <div class="current-time">{{ landing.timer.timeLeft | timecode }}</div>
+  <div class="buttons">
+    <button class="start" ng-click="landing.timer.startSession()">{{ landing.timer.buttonWords}}</button>
+  </div>
