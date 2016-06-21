@@ -15,5 +15,5 @@
 
   angular
     .module('pomoApp')
-    .controller('HomeCtrl', ['Timer', '$scope', LandingCtrl]);
+    .controller('HomeCtrl', ['Timer', '$scope', HomeCtrl]);
 })();
